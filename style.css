@@ -60,5 +60,15 @@ footer a:hover {
   color: #ccc;
 }
 
+/* Logo styling */
+.logo {
+  height: 45px;           /* adjust size */
+  width: auto;             /* keep aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);  /* small zoom on hover */
+}
 
 
