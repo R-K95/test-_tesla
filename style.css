@@ -1,16 +1,153 @@
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    background: rgba(0,0,0,0.5); /* semi-transparent */
-    z-index: 100;
+/* ===== General Styles ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-header nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
+
+section {
+  padding: 4rem 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ===== Hero Carousel ===== */
+.hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 30%;
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+/* ===== Product Cards ===== */
+.products .card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.products .card img {
+  border-radius: 1rem;
+}
+
+/* ===== Tesla & Shop Section ===== */
+.tesla-shop img {
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tesla-shop h2 {
+  font-size: 2.5rem;
+}
+
+.tesla-shop p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Maps Section ===== */
+.maps iframe {
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Charging Stations ===== */
+.charging img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.charging img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Dual Images Section ===== */
+.dual-images img {
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.dual-images img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #aaa;
+}
+
+/* ===== Test Drive Button ===== */
+.test-drive-btn {
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .tesla-shop h2 {
+    font-size: 2rem;
+  }
+
+  .tesla-shop p {
+    font-size: 1rem;
+  }
+}
+
