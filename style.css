@@ -8,10 +8,11 @@ header {
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+  background-image: url("images/tesla-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  opacity: 0.1; /* makes it faint, like a watermark */
 }
 
 /* Navbar transparent + scroll effect */
